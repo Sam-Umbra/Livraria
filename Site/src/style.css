@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+    /*
+    --primary-color: 39, 114, 160; Ocean Blue
+    --secundary-color: 204, 221, 234; Cloudy Sky
+    */
+    --primary-color: 23, 89, 212;
+    --secundary-color: 229, 236, 233;
+    --terciary-color: 148, 99, 56;
+    --quartenary-color: 150, 154, 151;
+    --bg-color: 255, 255, 255;
+}
+
+body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border-bottom: 2px solid rgb(var(--primary-color));
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100vw;
+    /*background-color: rgb(var(--primary-color));*/
+}
+
+.header-main > p.logo {
+    font-family: 'Lilita One';
+}
+
+.header-main > .search-bar {
+    display: flex;
+}
+
+.search-bar > select {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search-bar > select > option {
+    
+}
+
+.search-bar > .search-field {
+    display: flex;
+    align-items: center;
+}
+
+.search-field > input {
+    border: 0.5px solid black;
+    border-right: transparent;
+    border-left: transparent;
+    padding: 3.5px;
+}
+
+.search-field > i {
+    border: 0.5px solid;
+    padding: 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-main > .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+header > nav.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    /*background-color: rgb(var(--terciary-color));*/
+    padding: 10px;
+    border-top: 2px solid blue;
+}
+
+header > .categories > .category {
+    cursor: pointer;
+    border: 1px solid rgb(var(--terciary-color));
+}
+
+main {
+    width: 100vw;
+    padding-top: 50px;
+}
+
+aside.left {
+
+}
+
+section.library {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.library > .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(var(--quartenary-color));
+    border-radius: 20px;
+}
+
+.book > figure {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.book > figure > .img {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 150px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.img img {
+    max-height: 100%;
+    display: block;
+}
+
+.book > figure > figcaption {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(275%);
+}
+
+.book > figure > figcaption > h2 {
+    color: white;
+}
+
+.book > p {
+    margin-top: -10px;
+}
