@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="src/style.css">
     <script src="./src/script.js"></script>
     <script src="https://kit.fontawesome.com/939fae6bc5.js" crossorigin="anonymous"></script>
     <title>Web-Books</title>
@@ -19,16 +19,12 @@
                     <option value="author">Autor</option>
                     <option value="publisher">Editora</option>
                     <option value="yearPublished">Ano</option>
-                    <option value="price">Preço</option>
-                    <option value="evaluation">Notas</option>
                 </select>
 
                 <div class="search-field">
                     <input type="text">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <!--Criar outro input personalizado com 5 estrelas clicaves para ver que ao o usuario pesquisar ele pesquise pela nota do livro-->
-                <!--Criar um outro input com dois campos, para a opção de preço-->
             </div>
 
             <div class="icons">
@@ -47,10 +43,50 @@
     </header>
     <main>
         <aside class="left">
-
+            <div class="extra-params">
+                <h3>Preço</h3>
+                <div class="param">
+                    <div class="btn-circle"></div>
+                    <p>Até R$ 25</p>
+                </div>
+                <div class="param">
+                    <div class="btn-circle"></div>
+                    <p>R$ 25 - R$ 70</p>
+                </div>
+                <div class="param">
+                    <div class="btn-circle"></div>
+                    <p>Acima de R$ 70</p>
+                </div>
+                <div class="param">
+                    <input type="number" placeholder="R$ Min">
+                    <p>-</p>
+                    <input type="number" placeholder="R$ Máx">
+                </div>
+            </div>
+            <div class="extra-params">
+                <h3>Notas</h3>
+                <div class="ratings">
+                    <i class="fa-solid fa-star" id="star-1" data-value="1"></i>
+                    <i class="fa-solid fa-star" id="star-2" data-value="2"></i>
+                    <i class="fa-solid fa-star" id="star-3" data-value="3"></i>
+                    <i class="fa-solid fa-star" id="star-4" data-value="4"></i>
+                    <i class="fa-solid fa-star" id="star-5" data-value="5"></i>
+                </div>
+            </div>
         </aside>
 
         <section class="library">
+            <div class="book">
+                <figure>
+                    <div class="img"><img src="https://i1.sndcdn.com/artworks-KlzGzGAyG7Bo8CYl-o9LyAw-t500x500.jpg" alt=""></div>
+                    <figcaption>
+                        <h2>Shadow Slave</h2>
+                    </figcaption>
+                </figure>
+                <p id="author">Guiltythree</p>
+                <p id="publisher">WebNovel</p>
+                <p id="year">2022</p>
+            </div>
             <div class="book">
                 <figure>
                     <div class="img"><img src="https://i1.sndcdn.com/artworks-KlzGzGAyG7Bo8CYl-o9LyAw-t500x500.jpg" alt=""></div>

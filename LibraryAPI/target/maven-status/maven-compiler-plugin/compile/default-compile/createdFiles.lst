@@ -1,0 +1,6 @@
+br\dev\umbra\LibraryAPI\LibraryApiApplication.class
+br\dev\umbra\LibraryAPI\DTO\BookDTO.class
+br\dev\umbra\LibraryAPI\service\BookService.class
+br\dev\umbra\LibraryAPI\controllers\BookController.class
+br\dev\umbra\LibraryAPI\repositories\BookRepository.class
+br\dev\umbra\LibraryAPI\entities\Book.class
