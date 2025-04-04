@@ -1,3 +1,7 @@
+import { bookCard } from "./constructor.js";
+
+bookCard
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const library = document.querySelector('.library');
@@ -26,6 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetchApi('books');
             }
         }
+    })
+
+    const searchIcon = document.getElementById('searchIcon');
+    searchIcon.addEventListener('click', () => {
+        const searchInput = searchBar.value;
+
+            library.innerHTML = null;
+
+            if (searchInput !== '') {
+                fetchApi(`${selectParameter}/${searchInput}`);
+            } else {
+                /*Construtor Padrão*/
+                fetchApi('books');
+            }
     })
 
     const btnCircles = document.querySelectorAll('.btn-circle');
@@ -116,7 +134,8 @@ async function fetchApi(uri) {
         }
 
         const data = await response.json();
-        console.log(data);
+
+        bookCard(data);
 
     } catch (error) {
         console.error(error);
@@ -124,6 +143,7 @@ async function fetchApi(uri) {
 }
 
 function starValue(value) {
+    const library = document.querySelector('.library');
 
     const star1 = document.getElementById('star-1');
     const star2 = document.getElementById('star-2');

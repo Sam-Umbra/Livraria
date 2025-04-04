@@ -25,6 +25,7 @@ public class Book {
     private String name;
     private String author;
     private String publisher;
+    private String description;
     
     @Column(name = "yearpublished")
     private int yearPublished;
@@ -67,6 +68,16 @@ public class Book {
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    
+    
 
     public int getYearPublished() {
         return yearPublished;
