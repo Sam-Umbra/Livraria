@@ -133,6 +133,10 @@ header {
     background: var(--terciary-color);
 }
 
+.selected-category {
+    background-color: var(--terciary-color);
+}
+
 /* Estilização da seção de livros */
 
 aside.left {
@@ -168,7 +172,7 @@ aside.left > .extra-params {
     color: orange;
 }
 
-.param > input {
+.param > input.price-field {
     height: 30px;
     width: 50px;
     outline: none;
