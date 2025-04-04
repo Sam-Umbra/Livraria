@@ -1,3 +1,4 @@
+br\dev\umbra\LibraryAPI\config\CorsConfig.class
 br\dev\umbra\LibraryAPI\LibraryApiApplication.class
 br\dev\umbra\LibraryAPI\DTO\BookDTO.class
 br\dev\umbra\LibraryAPI\service\BookService.class

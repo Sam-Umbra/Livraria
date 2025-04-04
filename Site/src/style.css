@@ -165,7 +165,7 @@ aside.left > .extra-params {
 }
 
 .selected-star {
-    background-color: orange;
+    color: orange;
 }
 
 .param > input {

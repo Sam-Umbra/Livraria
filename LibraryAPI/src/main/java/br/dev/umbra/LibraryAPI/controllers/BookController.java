@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -111,6 +112,20 @@ public class BookController {
             return ResponseEntity.notFound().build();
         } else {
             return ResponseEntity.ok(result); 
+        }
+    }
+    
+    @GetMapping("/price")
+    public ResponseEntity<List<BookDTO>> findByPriceBetween(
+            @RequestParam double firstPrice,
+            @RequestParam double secondPrice) {
+        
+        List<BookDTO> result = bookService.findByPrice(firstPrice, secondPrice);
+        
+        if (result.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        } else {
+            return ResponseEntity.ok(result);
         }
     }
     

@@ -19,4 +19,5 @@ public interface BookRepository extends JpaRepository<Book, Long>{
     List<Book> findByYearPublished(int year);
     List<Book> findByCategoryIgnoreCase(String category);
     List<Book> findByEvaluation(int evaluation);
+    List<Book> findByPriceBetween(double firstPrice, double secondPrice);
 }

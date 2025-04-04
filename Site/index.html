@@ -15,14 +15,14 @@
 
             <div class="search-bar">
                 <select name="parameters" id="parameters">
-                    <option value="title">Título</option>
+                    <option value="name">Título</option>
                     <option value="author">Autor</option>
                     <option value="publisher">Editora</option>
                     <option value="yearPublished">Ano</option>
                 </select>
 
                 <div class="search-field">
-                    <input type="text">
+                    <input type="text" id="searchBar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -46,17 +46,20 @@
             <div class="extra-params">
                 <h3>Preço</h3>
                 <div class="param">
-                    <div class="btn-circle"></div>
+                    <div class="btn-circle" data-param-1="0" data-param-2="25"></div>
                     <p>Até R$ 25</p>
                 </div>
+
                 <div class="param">
-                    <div class="btn-circle"></div>
+                    <div class="btn-circle" data-param-1="25" data-param-2="70"></div>
                     <p>R$ 25 - R$ 70</p>
                 </div>
+
                 <div class="param">
                     <div class="btn-circle"></div>
                     <p>Acima de R$ 70</p>
                 </div>
+
                 <div class="param">
                     <input type="number" placeholder="R$ Min">
                     <p>-</p>

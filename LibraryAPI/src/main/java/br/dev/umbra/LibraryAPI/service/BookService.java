@@ -89,4 +89,13 @@ public class BookService {
         return resultDTO;
     }
     
+    public List<BookDTO> findByPrice(double firstPrice, double secondPrice) {
+        List<Book> resultBook = bookRepository.findByPriceBetween(firstPrice, secondPrice);
+        
+        List<BookDTO> resultDTO = resultBook.stream()
+                .map(x -> new BookDTO(x)).toList();
+        
+        return resultDTO;
+    }
+    
 }
