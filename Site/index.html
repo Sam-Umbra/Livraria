@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <script src="./src/script.js" type="module"></script>
+    <link rel="shortcut icon" href="src/favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/939fae6bc5.js" crossorigin="anonymous"></script>
     <title>Web-Books</title>
 </head>
 <body>
     <header>
         <div class="header-main">
-            <p class="logo">SpringBooks</p>
-
+            <h1 class="logo">SpringBooks</h1>
             <div class="search-bar">
                 <select name="parameters" id="parameters">
                     <option value="name">Título</option>
@@ -28,8 +28,8 @@
             </div>
 
             <div class="icons">
-                <i class="fa-solid fa-cart-plus"></i>
-                <i class="fa-solid fa-user"></i>
+                <a href="src/shopping.html"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
 
@@ -41,7 +41,8 @@
             <li class="category">Drama</li>
         </nav>
     </header>
-    <main>
+
+    <div class="main-library">
         <aside class="left">
             <div class="extra-params">
                 <h3>Preço</h3>
@@ -49,17 +50,14 @@
                     <div class="btn-circle" data-param-1="0" data-param-2="25"></div>
                     <p>Até R$ 25</p>
                 </div>
-
                 <div class="param">
                     <div class="btn-circle" data-param-1="25" data-param-2="70"></div>
                     <p>R$ 25 - R$ 70</p>
                 </div>
-
                 <div class="param">
                     <div class="btn-circle" data-param-1="70" data-param-2="1000"></div>
                     <p>Acima de R$ 70</p>
                 </div>
-
                 <div class="param">
                     <input type="number" placeholder="R$ Min" class="price-field" id="min-price">
                     <p>-</p>
@@ -77,41 +75,42 @@
                 </div>
             </div>
         </aside>
-
-        <section class="library">
-            <div class="book">
-                <figure>
-                    <div class="img"><img src="https://i1.sndcdn.com/artworks-KlzGzGAyG7Bo8CYl-o9LyAw-t500x500.jpg" alt=""></div>
-                    <figcaption>
-                        <h2>Shadow Slave</h2>
-                    </figcaption>
-                </figure>
-                <p id="author">Guiltythree</p>
-                <p id="publisher">WebNovel</p>
-                <p id="year">2022</p>
-            </div>
-            <div class="book">
-                <figure>
-                    <div class="img"><img src="https://i1.sndcdn.com/artworks-KlzGzGAyG7Bo8CYl-o9LyAw-t500x500.jpg" alt=""></div>
-                    <figcaption>
-                        <h2>Shadow Slave</h2>
-                    </figcaption>
-                </figure>
-                <p id="author">Guiltythree</p>
-                <p id="publisher">WebNovel</p>
-                <p id="year">2022</p>
-            </div>
-        </section>
-
-        <aside class="right">
-
-        </aside>
-    </main>
+        <main>
+            <section class="library">
+                <!--
+                <div class="book">
+                    <figure>
+                        <div class="img"><img src="https://i1.sndcdn.com/artworks-KlzGzGAyG7Bo8CYl-o9LyAw-t500x500.jpg" alt=""></div>
+                        <figcaption>
+                            <h2>Shadow Slave</h2>
+                        </figcaption>
+                    </figure>
+                    <p id="author">Guiltythree</p>
+                    <p id="publisher">WebNovel</p>
+                    <p id="year">2022</p>
+                </div>
+                <div class="book">
+                    <figure>
+                        <div class="img"><img src="https://i1.sndcdn.com/artworks-KlzGzGAyG7Bo8CYl-o9LyAw-t500x500.jpg" alt=""></div>
+                        <figcaption>
+                            <h2>Shadow Slave</h2>
+                        </figcaption>
+                    </figure>
+                    <p id="author">Guiltythree</p>
+                    <p id="publisher">WebNovel</p>
+                    <p id="year">2022</p>
+                </div>
+                -->
+            </section>
+        </main>
+    </div>
     <footer>
         <p>Todos os direitos reservados para SpringBook. &copy; Copyright.</p>
         <p>Entre em contato conosco :</p>
         <p>Telefone: +12 98765-4321</p>
         <p>Email: example@mail.com</p>
     </footer>
+
+    
 </body>
 </html>

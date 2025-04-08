@@ -139,6 +139,7 @@ async function fetchApi(uri) {
 
     } catch (error) {
         console.error(error);
+        alert("Livro não encontrado!");
     }
 }
 
