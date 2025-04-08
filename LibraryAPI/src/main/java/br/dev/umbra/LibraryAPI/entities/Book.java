@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
  * @author Sam_Umbra
  */
 @Entity
-@Table(name = "book")
+@Table(name = "books")
 public class Book {
     
     @Id
