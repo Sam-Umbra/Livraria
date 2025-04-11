@@ -1,7 +1,9 @@
 import { fetchGET } from "../connection/connection.js";
 
 function bookCard(endpoint) {
-   
+
+   // Como a função fetch é async ela retorna um promise
+   // para ela se resolver é necessário a seguinte estrutura.
     fetchGET(endpoint).then(data => {
         data.forEach(element => {
 
