@@ -348,7 +348,7 @@ footer {
     background-color: var(--quaternary-color);
     border: 5px solid var(--primary-color);
     width: 1000px;
-    height: 500px;
+    height: auto;
     padding: 20px 20px 20px 0px;
     border-radius: 20px;
 }
@@ -369,6 +369,7 @@ footer {
 .modal > .modal-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .modal-content > i {

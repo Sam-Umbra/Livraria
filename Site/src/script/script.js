@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let param1 = element.getAttribute('data-param-1');
                 let param2 = element.getAttribute('data-param-2');
 
-                console.log(param1, param2);
+                //console.log(param1, param2);
                 element.classList.add('selected-circle');
 
                 library.innerHTML = null;

@@ -11,7 +11,7 @@ async function fetchGET(endpoint) {
 
     } catch (error) {
         console.error(error);
-        alert("Livro não encontrado!");
+        //alert("Livro não encontrado!");
     }
 }
 
